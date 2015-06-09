@@ -25,8 +25,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-#MEDIA_ROOT= '/glass/media/'
-MEDIA_URL = '/media/'
+
 
 
 # Application definition
@@ -88,3 +87,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 STATIC_ROOT = '/home/django/django_project/glass/static/'
 STATIC_URL = '/static/'
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT= os.path.join(BASE_DIR,'media')
